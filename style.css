@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed:wght@400;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    list-style: none;
+}
+
+/*---------- header ------------*/
+
+
+.top-head{
+    background: #C5BB83;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-same-text{
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    line-height: 30px;
+    color: #000;
+    text-transform: capitalize;
+}
+
+.middle-container{
+    padding: 40px 80px;
+}
+
+.center-text{
+    padding-right: 100px;
+    text-decoration: underline;
+    text-decoration-color: red;
+    -moz-text-decoration-color: red;
+}
+.location-address{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-number{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.icon{
+    width: 18px;
+}
+
+.logo img{
+    width: 250px;
+}
+
+/*------------------------------- navbar --------------------------------*/
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.search img{
+    width: 25px;
+}
+
+.nav-items{
+
+}
+
+.nav-links{
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.nav-links a{
+    color: rgb(42, 42, 42);
+    text-decoration: none;
+    margin-right: 50px;
+    text-transform: capitalize;
+}
+
+.logo{
+    padding: 10px 0;
+    padding-right: 80px;
+}
+.logo img{
+    width: 270px;
+}
+
+.first-link-color a{
+    color: #C5BB83;
+}
+
+.button-color .button{
+    padding: 15px;
+    background: #C5BB83;
+    color: #fff;
+}
+
+
+/*----------------- first- section -----------------*/
+
+section{
+    background-image: url(./images/church-009-scaled.jpg);
+    background-size: cover;
+    height: 700px;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 200px;
+    padding-left:300px ;
+}
+
+.heading-text h1{
+    font-weight: 700;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding: 20px 0;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.text-p p{
+   font-size: 25px;
+   color: #fff;
+   line-height: 1.4;
+   text-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.button-two{
+    padding-top: 30px;
+}
+
+.button-two a{
+    background: #C5BB83;
+    padding: 15px 25px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+
+/*--------------- section- three ---------------------*/
+
+
+.section-three{
+background-image: url(./images/index.png) ;
+background-color: #C5BB83 ;
+background-blend-mode: multiply;
+
+}
+
+.section-three-heading h1{
+    padding-left: 60px;
+    font-size: 35px;
+}
+
+.section-three-wrapper{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    gap: 20px;
+    padding: 60px 0;
+}
+
+.section-three-image img{
+    border-radius: 50%;
+    width: 180px;
+    border: .5px solid #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.section-three-paragraph-and-image{
+    display: flex;
+    gap: 50px;
+  ;
+}
+
+.paragraph p{
+    color: #000000;
+    font-family: "Open Sans", Sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    letter-spacing: 1px;
+}
+
+.name{
+    padding-top: 20px;
+}
+
+.name p{
+    text-transform: capitalize;
+    letter-spacing:1px ;
+    font-family: "Open Sans", Sans-serif;
+}
+
+
+/*------------------------ youtube-section---------------------*/
+
+
+.video-wrapper iframe{
+   margin-top: 100px;
+   margin-bottom: 100px;
+}
+
+.video-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+
