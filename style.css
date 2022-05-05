@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;700&family=Bebas+Neue&family=Commissioner:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&family=Gloria+Hallelujah&family=IBM+Plex+Serif:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;600;700&family=League+Spartan:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&family=Readex+Pro:wght@400;500;600;700&family=Roboto+Condensed:wght@400;700&family=Source+Serif+Pro:wght@400;600;700&display=swap');
 
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto Condensed', sans-serif;
     list-style: none;
 }
 
@@ -23,14 +22,15 @@
 .header-same-text{
     font-size: 20px;
     font-weight: 400;
-    letter-spacing: .5px;
+    
     line-height: 30px;
     color: #000;
     text-transform: capitalize;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .middle-container{
-    padding: 40px 80px;
+    padding: 30px 80px;
 }
 
 .center-text{
@@ -64,16 +64,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
 }
 
 .search img{
     width: 25px;
 }
 
-.nav-items{
 
-}
 
 .nav-links{
     padding-left: 20px;
@@ -88,15 +85,17 @@
     color: rgb(42, 42, 42);
     text-decoration: none;
     margin-right: 50px;
+    font-size: 16px;
     text-transform: capitalize;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .logo{
-    padding: 10px 0;
+    padding: 5px 0;
     padding-right: 80px;
 }
 .logo img{
-    width: 270px;
+    width: 250px;
 }
 
 .first-link-color a{
@@ -115,16 +114,16 @@
 section{
     background-image: url(./images/church-009-scaled.jpg);
     background-size: cover;
-    height: 700px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: center;
+    
 }
 
 .text-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    padding-top: 200px;
-    padding-left:300px ;
+    text-align: start;
 }
 
 .heading-text h1{
@@ -133,6 +132,7 @@ section{
     text-transform: uppercase;
     padding: 20px 0;
     color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
     text-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
@@ -140,11 +140,12 @@ section{
    font-size: 25px;
    color: #fff;
    line-height: 1.4;
+   font-family: 'DM Sans', sans-serif;
    text-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
 .button-two{
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 .button-two a{
@@ -154,6 +155,7 @@ section{
     text-decoration: none;
     text-transform: capitalize;
     font-weight: 400;
+    font-family: 'DM Sans', sans-serif;
 }
 
 
@@ -162,22 +164,29 @@ section{
 
 .section-three{
 background-image: url(./images/index.png) ;
-background-color: #C5BB83 ;
+background-color: #DBD2A4 ;
 background-blend-mode: multiply;
-
 }
 
+
 .section-three-heading h1{
-    padding-left: 60px;
     font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: 'Roboto Condensed', sans-serif;
+   
 }
 
 .section-three-wrapper{
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     align-items: center;
-    gap: 20px;
     padding: 60px 0;
+}
+
+.section-three-image{
+    position: relative;
+    bottom: 20px;
 }
 
 .section-three-image img{
@@ -193,14 +202,16 @@ background-blend-mode: multiply;
 .section-three-paragraph-and-image{
     display: flex;
     gap: 50px;
-  ;
+    padding-left: 200px;
+    padding-right: 250px;
+    padding-top: 40px;
 }
 
 .paragraph p{
     color: #000000;
-    font-family: "Open Sans", Sans-serif;
-    font-size: 16px;
-    line-height: 1.6em;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    line-height: 26px;
     letter-spacing: 1px;
 }
 
@@ -210,22 +221,204 @@ background-blend-mode: multiply;
 
 .name p{
     text-transform: capitalize;
-    letter-spacing:1px ;
+    letter-spacing: 1px;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: 'DM Sans', sans-serif;
     font-family: "Open Sans", Sans-serif;
 }
 
 
 /*------------------------ youtube-section---------------------*/
 
-
-.video-wrapper iframe{
-   margin-top: 100px;
-   margin-bottom: 100px;
-}
-
-.video-wrapper{
+.youtube-video-container{
+    height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
+
+.yt-video{
+ aspect-ratio: 16/9;
+ height: 620px;
+}
+
+.yt-video iframe{
+    height: 100%;
+    width: 100%;
+}
+
+/* -------------------------- grid-container -------------------------*/
+
+.grid-container{
+    background: #C5BB83;
+    padding-bottom: 50px;
+}
+
+.heading-text-grid{
+    padding-top: 50px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.heading-text-grid h1{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight:700;
+    line-height: 2;
+    letter-spacing: 1px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.heading-text-grid p{
+    font-size: 20px;
+    line-height: 20px;
+    font-family: "DM Sans", Sans-serif;
+    letter-spacing: 1px;
+}
+
+.grid-items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 200px;
+    padding-right: 200px;
+    width: 100%;
+    gap: 20px;
+}
+
+.item{
+    width: 360px;
+}
+
+.img img{
+    width: 100%;
+    padding-bottom: 20px;
+}
+ 
+.text-h1 h3{
+    padding-bottom: 20px;
+    text-transform: capitalize;
+    font-size: 23px;
+    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.paragraph p{
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "DM Sans" , sans-serif;
+}
+
+
+/*----------------- news letter section -----------------------*/
+
+
+.newsletter-wrapper{
+    display:flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.wrapper-item-one{
+    text-align: center;
+    margin-right: 150px;
+}
+
+.wrapper-item-one h1{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.wrapper-item-one p{
+    color: #505050;
+    font-family: "DM Sans" , sans-serif;
+}
+
+.wrapper-item-two{
+    display: flex;
+    align-items: center;
+}
+
+form .email{
+     width: 300px;
+     height: 44px;
+     border: 1px solid #C5BB83;
+}
+
+input{
+    font-size: 14px;
+    padding-left: 20px;
+    font-family: "DM Sans" , sans-serif;
+}
+
+form .button{
+      padding: 12px 25px;
+      letter-spacing: 0.5px;
+      background: #C5BB83;
+      color: rgb(221, 221, 221);
+      border: none;
+}
+
+
+/* ---------------- footer-container -----------------------*/
+
+.footer-container{
+    background: #C5BB83;
+    width: 100%;
+}
+
+.footer-items-wrapper{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    gap: 25px;
+}
+
+.footer-headings{
+    padding-bottom: 20px;
+    text-transform: capitalize;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.footer-item p{
+    font-size: 14px;
+    font-family: "open sans", sans-serif;
+    padding-bottom: 20px;
+    color: #3b3b3b;
+    letter-spacing: 2px;
+}
+
+.footer-item p>a{
+    color: hsl(330, 90%, 50%);
+    text-decoration: none;
+}
+
+
+/* ---------------------- copyright section --------------------------*/
+
+
+.copyright-section{
+    background: #000;
+}
+
+.copyright-text span{
+    color: #fff;
+    font-size: 14px;
+    font-family: "DM Sans" , sans-serif;
+}
+
+.copyright-text{
+    padding: 25px 0;
+    text-align: center;
+}
+
+
+
 
 
