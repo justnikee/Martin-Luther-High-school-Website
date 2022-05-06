@@ -8,37 +8,47 @@
     list-style: none;
 }
 
-/*---------- header ------------*/
+/*---------------------------------------------------- header -----------------------------------------------*/
 
-
-.top-head{
+.header-container{
     background: #C5BB83;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+   
+}
+
+.top-head-wrapper{
+    border: 1px solid red;
+    max-width: 1140px;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    gap: 240px;
 }
 
 .header-same-text{
     font-size: 20px;
     font-weight: 400;
-    
     line-height: 30px;
     color: #000;
     text-transform: capitalize;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.middle-container{
-    padding: 30px 80px;
-}
+
+
 
 .center-text{
-    padding-right: 100px;
     text-decoration: underline;
-    text-decoration-color: red;
-    -moz-text-decoration-color: red;
+    position: relative;
+    left: 10px;
+    text-decoration-color: hsl(0, 100%, 50%);
+    -moz-text-decoration-color: hsl(0, 100%, 50%);
 }
+
 .location-address{
     display: flex;
     align-items: center;
@@ -48,46 +58,119 @@
 .header-number{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
+    position: relative;
+    right: 80px;
 }
 .icon{
-    width: 18px;
+    width: 16px;
 }
 
 .logo img{
-    width: 250px;
+    width: 300px;
+    padding-top: 5px;
+    padding-left: 20px;
 }
 
-/*------------------------------- navbar --------------------------------*/
+/*--------------------------------------------------- navbar ------------------------------------------------*/
 
 .nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
-
-.search img{
-    width: 25px;
-}
-
-
 
 .nav-links{
     padding-left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    padding: 35px 0;
+}
+
+
+.nav-links li{
+    position: relative;
 }
 
 
 
 .nav-links a{
-    color: rgb(42, 42, 42);
+    color: hsl(0, 0%, 16%);
     text-decoration: none;
     margin-right: 50px;
     font-size: 16px;
+    padding: 30px 0;
     text-transform: capitalize;
     font-family: 'DM Sans', sans-serif;
+}
+
+.nav-links a:hover{
+    color: hsl(51, 36%, 64%);
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.nav-items li.arrow:hover{
+    color: hsl(51, 36%, 64%);
+}
+
+.nav-items li.arrow:after{
+    right: 30px;
+    top: 60%;
+    transform: translateY(-50%);
+    font-family: "FontAwesome";
+    font-size: 16px;
+    content: '\f107';
+    position: absolute;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-items{
+    position: absolute;
+}
+
+.dropdown>.dropdown-items{
+    display: none;
+}
+
+.dropdown-items li>a{
+    line-height: 40px;
+    color: hsl(0, 0%, 100%) ;
+    white-space: nowrap;
+}
+
+.dropdown-items li>a:hover{
+    color: hsl(0, 0%, 26%);
+}
+
+li.dropdown:hover > .dropdown-items{
+    display: block;
+    position: absolute;
+    top: 60px;
+    background: hsl(51, 36%, 64%);
+    padding: 10px 20px;
+    transition: .4s;
+    line-height: 20px;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.dropdown-items li{
+   /* padding-bottom: 15px;*/
 }
 
 .logo{
@@ -99,31 +182,87 @@
 }
 
 .first-link-color a{
-    color: #C5BB83;
+    color: hsl(51, 36%, 64%);
 }
 
 .button-color .button{
     padding: 15px;
-    background: #C5BB83;
-    color: #fff;
+    background: hsl(51, 36%, 64%);
+    color: hsl(0, 0%, 100%);
 }
 
+.button-color .button:hover{
+    color: hsl(0, 0%, 100%);
+}
 
-/*----------------- first- section -----------------*/
+.search{
+    padding: 20px;
+}
+
+.search img{
+    width: 20px;
+}
+
+/*--------------------------------------------------- first- section --------------------------------------------*/
 
 section{
     background-image: url(./images/church-009-scaled.jpg);
+    position: relative;
     background-size: cover;
     height: 600px;
     display: flex;
     flex-direction: column;
-    align-items: center ;
+    align-items: flex-start ;
     justify-content: center;
-    
+}
+
+.slider{
+    max-width: 1140px;
+    height: 250px;
+    margin: none;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+}
+
+/*images-wrapper{
+    width: 100vw;
+    display: flex;
+    overflow: hidden;
+}
+
+@keyframes slide{
+    0% {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+}
+    25%{
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+}
+    30%{
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+}
+}*/
+
+.images-wrapper img{
+   width: 100%;
 }
 
 .text-container{
     text-align: start;
+    margin-left: 300px;
 }
 
 .heading-text h1{
@@ -131,17 +270,17 @@ section{
     font-size: 50px;
     text-transform: uppercase;
     padding: 20px 0;
-    color: #fff;
+    color: hsl(0, 0%, 100%);
     font-family: 'Roboto Condensed', sans-serif;
-    text-shadow: 0 0 10px rgba(0,0,0,0.3);
+    text-shadow: 0 0 10px hsla(0, 0%, 0%, 0.3);
 }
 
 .text-p p{
    font-size: 25px;
-   color: #fff;
+   color: hsl(0, 0%, 100%);
    line-height: 1.4;
    font-family: 'DM Sans', sans-serif;
-   text-shadow: 0 0 10px rgba(0,0,0,0.3);
+   text-shadow: 0 0 10px hsla(0, 0%, 0%, 0.3);
 }
 
 .button-two{
@@ -149,9 +288,9 @@ section{
 }
 
 .button-two a{
-    background: #C5BB83;
+    background: hsl(51, 36%, 64%);
     padding: 15px 25px;
-    color: #fff;
+    color: hsl(0, 0%, 100%);
     text-decoration: none;
     text-transform: capitalize;
     font-weight: 400;
@@ -159,12 +298,12 @@ section{
 }
 
 
-/*--------------- section- three ---------------------*/
+/*----------------------------------------------- section- three ----------------------------------------------*/
 
 
 .section-three{
 background-image: url(./images/index.png) ;
-background-color: #DBD2A4 ;
+background-color: hsl(50, 43%, 75%) ;
 background-blend-mode: multiply;
 }
 
@@ -229,7 +368,7 @@ background-blend-mode: multiply;
 }
 
 
-/*------------------------ youtube-section---------------------*/
+/*--------------------------------------------- youtube-section -----------------------------------------------*/
 
 .youtube-video-container{
     height: 100vh;
@@ -248,11 +387,12 @@ background-blend-mode: multiply;
     width: 100%;
 }
 
-/* -------------------------- grid-container -------------------------*/
+/* ---------------------------------------------- grid-container ---------------------------------------------*/
 
 .grid-container{
     background: #C5BB83;
     padding-bottom: 50px;
+
 }
 
 .heading-text-grid{
@@ -282,7 +422,7 @@ background-blend-mode: multiply;
     grid-template-columns: 1fr 1fr 1fr;
     padding-left: 200px;
     padding-right: 200px;
-    width: 100%;
+    max-width: 1140px;
     gap: 20px;
 }
 
@@ -310,7 +450,7 @@ background-blend-mode: multiply;
 }
 
 
-/*----------------- news letter section -----------------------*/
+/*--------------------------------------------- news letter section -----------------------------------------*/
 
 
 .newsletter-wrapper{
@@ -364,7 +504,7 @@ form .button{
 }
 
 
-/* ---------------- footer-container -----------------------*/
+/* -------------------------------------- footer-container -----------------------------------------------*/
 
 .footer-container{
     background: #C5BB83;
@@ -400,7 +540,7 @@ form .button{
 }
 
 
-/* ---------------------- copyright section --------------------------*/
+/* ---------------------------------------------- copyright section ----------------------------------------*/
 
 
 .copyright-section{

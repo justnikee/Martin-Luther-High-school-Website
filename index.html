@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Martin Luther High School</title>
 </head>
 <body>
+
+    <!--------------------------------------------Header Section-------------------------------------------------------->
+
     <header>
-        <div class="top-head">
+        <div class="header-container">
+        <div class="top-head-wrapper">
             <div class="location-address">
                     <div class="location-icon">
                       <img class="icon" src="./images/maps-and-flags.png" alt="location-pin">
@@ -31,8 +36,12 @@
                     <p class="header-same-text">517-525-0116</p>
                 </div>
             </div>
+           
         </div>
-<!---------------------------------- navbar -------------------------------->
+    </div>
+
+<!----------------------------------------------- navbar -------------------------------------------------->
+
         <div class="nav">
             <div class="logo">
                 <img src="./images/cropped-MartinLutherLogo2.png" alt="martin luther">
@@ -40,8 +49,23 @@
             <div class="nav-items">
                 <ul class="nav-links">
                     <li class="first-link-color"><a href="#">martin luther high school</a></li>
-                    <li><a href="#">about us</a></li>
-                    <li><a href="#">news</a></li>
+                    <li class="arrow dropdown">
+                        <a href="#">about us</a>
+                    <ul class="dropdown-items">
+                        <li><a href="#">Handbook</a></li>
+                        <li><a href="#">superintendent</a></li>
+                        <li><a href="#">what we believe</a></li>
+                        <li><a href="#">association congregations</a></li>
+                        <li><a href="#">vision & purpose</a></li>
+                        <li><a href="#">board of directors</a></li>
+                        <li><a href="#">constitution and by-laws</a></li>
+
+                    </ul></li>
+                    <li class="arrow dropdown"><a href="#">news</a>
+                        <ul class="dropdown-items">
+                            <li><a href="#">maverick's sports updates</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">contact us</a></li>
                     <li class="button-color"><a class="button" href="#">donate today</a></li>
                 </ul>
@@ -52,7 +76,26 @@
         </div>
     </header>
     <section>
+
+<!--------------------------------------------- First Section ------------------------------------------------------------>
+
         <div class="first-section">
+               <!-- <div class="slider">
+
+                    <div class="slide-track">
+
+                        <div class="slide">
+                            <img src="./images/church-009-scaled.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/bgg.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/IMG_3063.jpg" alt="">
+                        </div>
+                    </div>
+                </div>-->
+        
             <div class="text-container">
                 <div class="heading-text">
                     <h1>
@@ -61,7 +104,7 @@
                 </div>
                 <div class="text-p">
                     <p>We are now accepting application for the 2021-2022 school <br>
-                    year. join the martin luther high school community - whare <br> education and innovation meet!</p>
+                    year. join the martin luther high school community - where <br> education and innovation meet!</p>
                 </div>
                 <div class="button-two">
                     <a href="#">register your students here</a>
@@ -69,6 +112,9 @@
             </div>
         </div>
     </section>
+
+<!------------------------------------------------- Section Three ------------------------------------------------------------->
+     
     <div class="section-three">
         <div class="section-three-wrapper">
             <div class="section-three-heading">
@@ -96,20 +142,24 @@
             </div>
         </div>
     </div>
-<!--------------- yt video section/ container---------->
+
+<!------------------------------------------------ yt video section/ container -------------------------------------------->
+
     <div class="youtube-video-container">
             <div class="yt-video">
                <iframe width="560" height="315" src="https://www.youtube.com/embed/lyh0t-9RgYc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
     </div>
 
-<!---------------- project based learning/ grid section--------->
+<!--------------------------------------- project based learning/ grid section -------------------------------------------->
 
 <div class="grid-container">
     <div class="heading-text-grid">
         <h1>project based learning #pbl</h1>
         <p>21st Century Education</p>
     </div>
+
+<!-------------------------------------- Grid-Items ---------------------------------------->
 
     <div class="grid-items-wrapper">
         <div class="item">
@@ -197,7 +247,8 @@
         </div>
     </div>
 </div>
-<!-------------------------- newsletter section-------------------------------->
+
+<!---------------------------------------------------------- newsletter section -------------------------------->
 
 <div class="newsletter-container">
     <div class="newsletter-wrapper">
@@ -213,7 +264,8 @@
         </div>
     </div>
 </div>
-<!------------------------- footer section-------------------------------->
+
+<!--------------------------------------------------- footer section ------------------------------------------------------------->
 
 <footer>
         <div class="footer-container">
@@ -258,12 +310,12 @@
         </div>
 </footer>
 
-<!----------------- copyRight Section------------------->
+<!---------------------------------------------- copyRight Section ---------------------------------------------------------->
+
 <div class="copyright-section">
     <div class="copyright-text">
         <span>Copyright 2020 Martinlutherhighschool.org. All Rights Reserved.</span>
     </div>
 </div>
-
 </body>
 </html>
