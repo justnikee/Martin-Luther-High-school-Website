@@ -16,17 +16,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-   
 }
 
 .top-head-wrapper{
-    border: 1px solid red;
     max-width: 1140px;
     display: flex;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     align-items: center;
-    gap: 240px;
+    gap: 245px;
 }
 
 .header-same-text{
@@ -44,7 +42,7 @@
 .center-text{
     text-decoration: underline;
     position: relative;
-    left: 10px;
+    right: 100px;
     text-decoration-color: hsl(0, 100%, 50%);
     -moz-text-decoration-color: hsl(0, 100%, 50%);
 }
@@ -60,17 +58,12 @@
     align-items: center;
     gap: 5px;
     position: relative;
-    right: 80px;
 }
 .icon{
     width: 16px;
 }
 
-.logo img{
-    width: 300px;
-    padding-top: 5px;
-    padding-left: 20px;
-}
+
 
 /*--------------------------------------------------- navbar ------------------------------------------------*/
 
@@ -79,7 +72,19 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    width: 100%;
 }
+
+.nav-wrapper{
+    max-width: 1140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 85px;
+    padding: 5px 0;
+}
+
 
 .nav-links{
     padding-left: 20px;
@@ -87,9 +92,14 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    padding: 35px 0;
 }
 
+.nav-items{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 25px 2px;
+}
 
 .nav-links li{
     position: relative;
@@ -100,11 +110,11 @@
 .nav-links a{
     color: hsl(0, 0%, 16%);
     text-decoration: none;
-    margin-right: 50px;
-    font-size: 16px;
-    padding: 30px 0;
+    padding-right: 45px;
+    font-size: 15px;
     text-transform: capitalize;
     font-family: 'DM Sans', sans-serif;
+    white-space: nowrap;
 }
 
 .nav-links a:hover{
@@ -169,16 +179,9 @@ li.dropdown:hover > .dropdown-items{
     -o-transition: .4s;
 }
 
-.dropdown-items li{
-   /* padding-bottom: 15px;*/
-}
 
-.logo{
-    padding: 5px 0;
-    padding-right: 80px;
-}
 .logo img{
-    width: 250px;
+    width: 247px;
 }
 
 .first-link-color a{
@@ -195,25 +198,27 @@ li.dropdown:hover > .dropdown-items{
     color: hsl(0, 0%, 100%);
 }
 
-.search{
-    padding: 20px;
-}
-
 .search img{
     width: 20px;
 }
 
 /*--------------------------------------------------- first- section --------------------------------------------*/
 
-section{
+.first-section-container{
     background-image: url(./images/church-009-scaled.jpg);
     position: relative;
     background-size: cover;
     height: 600px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start ;
     justify-content: center;
+}
+
+.first-section-wrapper{
+   max-width: 1140px;
+   display: flex;
+   padding-right: 420px;
+   align-items: center;
+
 }
 
 .slider{
@@ -262,7 +267,6 @@ section{
 
 .text-container{
     text-align: start;
-    margin-left: 300px;
 }
 
 .heading-text h1{
@@ -305,6 +309,8 @@ section{
 background-image: url(./images/index.png) ;
 background-color: hsl(50, 43%, 75%) ;
 background-blend-mode: multiply;
+display: flex;
+justify-content: center;
 }
 
 
@@ -316,11 +322,16 @@ background-blend-mode: multiply;
    
 }
 
+.section-three-container{
+    max-width: 1140px;
+}
+
 .section-three-wrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 60px 0;
+    
 }
 
 .section-three-image{
@@ -416,12 +427,14 @@ background-blend-mode: multiply;
     font-family: "DM Sans", Sans-serif;
     letter-spacing: 1px;
 }
+.grid-items-container{
+    display: flex;
+    justify-content: center;
+}
 
 .grid-items-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-left: 200px;
-    padding-right: 200px;
     max-width: 1140px;
     gap: 20px;
 }
@@ -484,9 +497,9 @@ background-blend-mode: multiply;
 }
 
 form .email{
-     width: 300px;
-     height: 44px;
-     border: 1px solid #C5BB83;
+    width: 300px;
+    height: 44px;
+    border: 1px solid #C5BB83;
 }
 
 input{
@@ -496,11 +509,11 @@ input{
 }
 
 form .button{
-      padding: 12px 25px;
-      letter-spacing: 0.5px;
-      background: #C5BB83;
-      color: rgb(221, 221, 221);
-      border: none;
+    padding: 12px 25px;
+    letter-spacing: 0.5px;
+    background: #C5BB83;
+    color: rgb(221, 221, 221);
+    border: none;
 }
 
 
