@@ -24,7 +24,12 @@
     padding-top: 15px;
     padding-bottom: 15px;
     align-items: center;
-    gap: 245px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.top-head-item{
+    padding-right: 245px;
 }
 
 .header-same-text{
@@ -75,11 +80,14 @@
 .nav-wrapper{
     max-width: 1140px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: relative;
-    gap: 85px;
     padding: 5px 0;
+}
+
+.nav-wrapper .right-margin{
+    margin-right: 85px;
 }
 
 
@@ -412,8 +420,31 @@ justify-content: center;
 .yt-video iframe{
     height: 100%;
     width: 100%;
+    border: 10px solid black;
 }
 
+
+/*.youtube-video-container{
+    position: relative;    
+}
+.flex-container{
+display: flex;
+justify-content: center;
+}
+
+.youtube-video-wrapper{
+    max-width: 1140px;
+    padding-top: 56.26%;
+    position: relative;
+}
+
+.wrapper-iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}*/
 /* ---------------------------------------------- grid-container ---------------------------------------------*/
 
 .grid-container{
@@ -511,6 +542,7 @@ justify-content: center;
 .wrapper-item-two{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 form .email{
@@ -604,6 +636,57 @@ form .button{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    .nav-links{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    
+
+    .button-color .button{
+        margin-top: 20px;
+    }
+    .center-text{
+        text-decoration: underline;
+        position: relative;
+        right: -100px;
+        text-align: center;
+    }
+
+
+  
+}
+
+@media (max-width: 769px){
+    .top-head-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+   
+/*-------------------------------------------- newsletter section ------------------------------------*/
+
+    .newsletter-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid red;
+    }
+    .wrapper-item-one{
+        padding-left: 100px;
+    }
+
+    .wrapper-item-one, .wrapper-item-two{
+        border: 1px solid red;
+    }
+
+
+}
+
+@media (max-width: 913px){
+
 }
 
 
