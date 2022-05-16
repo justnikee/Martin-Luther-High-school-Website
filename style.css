@@ -216,15 +216,116 @@ li.dropdown:hover > .dropdown-items{
     width: 20px;
 }
 
+.myBtn{
+background: transparent;
+    font-size: 20px;
+    color: hsl(0, 0%, 4%);
+    font-weight: bold;
+    border-radius: 36px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    }
+
+    .myBtn:hover{
+        color: hsl(51, 36%, 64%);
+    }
+
+    .myBtn i{
+        margin-left: 8px
+    }
+
+    .fullScreen{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000000d4;
+        display: none;
+        z-index: 9999;
+    }
+
+    .inputBox{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: transparent;
+        padding: 2px;
+        border-radius: 3px;
+        box-shadow : inset 0 0.25rem 0.125rem 0 rgb(0 0 0 / 5%);
+        display: flex;
+    }
+
+    .inputBox input{
+        height: 45px;
+        width: 1100px;
+        border: none;
+        outline: none;
+        font-size: 35px;
+        text-align: center;
+        font-weight: 500;
+        color: #4a4a4a;
+        background: transparent;
+        border-bottom: 1px solid #fff;
+        padding-left: 15px
+    }
+
+    .inputBox button{
+        border: none;
+        background-color: transparent;
+        vertical-align: middle;
+        cursor: pointer;
+        transition: 0.5s
+    }
+
+    .inputBox button i{
+        font-size: 30px
+    }
+
+    .closeBtn{
+        width: 40px;
+        color: #4a4a4a;
+        background:transparent;
+        border-radius: 16px;
+        position: absolute;
+        top: 50%;
+        right: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
 /*--------------------------------------------------- first- section --------------------------------------------*/
 
 .first-section-container{
-    background-image: url(./images/church-009-scaled.jpg);
     position: relative;
     background-size: cover;
-    height: 600px;
+    height: 80vh;
+    width: 100%;
     display: flex;
     justify-content: center;
+    animation: animate 8s ease-in-out infinite;
+    -webkit-animation: animate 8s ease-in-out infinite;
+}
+
+@keyframes animate{
+    0%,100%{
+        background-image: url(./images/church-009-scaled.jpg);
+    }
+    50%{
+        background-image: url(./images/IMG_3063.jpg);
+    }
+    75%{
+        background-image: url(./images/bgg.jpg);
+    }
 }
 
 .first-section-wrapper{
@@ -245,35 +346,6 @@ li.dropdown:hover > .dropdown-items{
     place-items: center;
 }
 
-/*images-wrapper{
-    width: 100vw;
-    display: flex;
-    overflow: hidden;
-}
-
-@keyframes slide{
-    0% {
-        transform: translateX(0);
-        -webkit-transform: translateX(0);
-        -moz-transform: translateX(0);
-        -ms-transform: translateX(0);
-        -o-transform: translateX(0);
-}
-    25%{
-        transform: translateX(0);
-        -webkit-transform: translateX(0);
-        -moz-transform: translateX(0);
-        -ms-transform: translateX(0);
-        -o-transform: translateX(0);
-}
-    30%{
-        transform: translateX(-100%);
-        -webkit-transform: translateX(-100%);
-        -moz-transform: translateX(-100%);
-        -ms-transform: translateX(-100%);
-        -o-transform: translateX(-100%);
-}
-}*/
 
 .images-wrapper img{
    width: 100%;
@@ -422,7 +494,6 @@ justify-content: center;
 .yt-video iframe{
     height: 100%;
     width: 100%;
-    border: 10px solid black;
 }
 
 
