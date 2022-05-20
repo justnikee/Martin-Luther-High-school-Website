@@ -300,23 +300,24 @@ background: transparent;
     }
 /*--------------------------------------------- hamburger --------------------------------*/
 
-    .hamburger{
-        display: none;
-    }
-    
-    .bar {
-        display: block;
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        -webkit-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-        background-color: hsl(0, 0%, 69%);
-        -moz-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-    }
-
+.hamburger{  
+    display:none;  
+    padding:5px;  
+    cursor:pointer;  
+   }  
+   .bar{
+    display:block;
+    width:35px;
+    height:3px;
+    margin:5px auto;
+    background-color:#000000;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    z-index: 9999;
+}  
 /*--------------------------------------------------- first- section --------------------------------------------*/
 
 .first-section-container{
@@ -488,8 +489,35 @@ justify-content: center;
 
 /*--------------------------------------------- youtube-section -----------------------------------------------*/
 
-
 .youtube-video-container{
+    width: 100%;
+}
+.youtube-video-wrapper{
+    max-width: 1140px;
+    padding: 50px 0;
+    margin: auto;
+}
+.yt-video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+      
+.yt-video-container::after {
+    display: block;
+    content: "";
+    padding-top: 56.25%;
+}
+      
+.yt-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*.youtube-video-container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -511,7 +539,7 @@ justify-content: center;
     height: 100%;
     width: 100%;
 }
-
+*/
 
 /*.youtube-video-container{
     position: relative;    
@@ -774,10 +802,8 @@ form .button{
     }
     
     .center-text{
-        text-decoration: underline;position: relative;
+       position: relative;
        right: 40px;
-        text-decoration-color: hsl(0, 100%, 50%);
-        -moz-text-decoration-color: hsl(0, 100%, 50%);
     }
     
     .location-address{
@@ -834,7 +860,7 @@ form .button{
 }
 
 
-.yt-video{
+/*.yt-video{
  aspect-ratio: 16/9;
  max-height: 80vh;
  max-width: 100vw;
@@ -844,8 +870,7 @@ form .button{
 .yt-video iframe{
     height: 100%;
     width: 100%;
-    border: 10px solid black;
-}
+}*/
 
 .section-three-wrapper{
     padding: 0 50px;
@@ -873,47 +898,106 @@ form .button{
         -o-border-radius: 50%;
     }
     
-    .section-three-paragraph-and-image{
-        display: flex;
-        gap: 50px;
-       /* padding-left: 200px;
-        padding-right: 250px;*/
-        padding-top: 40px;
-    }
+.section-three-paragraph-and-image{
+    display: flex;
+    gap: 50px;
+    /* padding-left: 200px;
+    padding-right: 250px;*/
+    padding-top: 40px;
+}
     
-    .paragraph p{
-        color: #000000;
-        font-family: "Open Sans", Sans-serif;
-        font-size: 16px !important;
-        line-height: 1.6em;
-        letter-spacing: 1px;
-    }
+.paragraph p{
+    color: #000000;
+    font-family: "Open Sans", Sans-serif;
+    font-size: 16px !important;
+    line-height: 1.6em;
+    letter-spacing: 1px;
+}
     
-    .paragraph-wrapper{
-        position: relative;
-        bottom: 20px;
-    }
+.paragraph-wrapper{
+    position: relative;
+    bottom: 20px;
+}
     
-    .name{
-        padding-top: 20px;
-    }
+.name{
+    padding-top: 20px;
+}
     
-    .name p{
-        text-transform: capitalize;
-        letter-spacing: 1px;
-        font-size: 16px;
-        line-height: 26px;
-        font-family: "Open Sans", Sans-serif;
-    }
+.name p{
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "Open Sans", Sans-serif;
+}
 
-    .grid-items-wrapper{
-        max-width: 1024px;
-    }
+.grid-items-wrapper{
+    max-width: 1024px;
+}
     
 }
 
 
 @media(max-width: 768px){
+
+
+    .nav-wrapper{
+       display: flex;
+       gap: 60px;
+       max-width: 700px; 
+    }
+
+    .nav-wrapper .logo{
+        padding-left: 20px;
+    }
+    
+.hamburger{
+    padding-right: 100px;
+    display: block;
+}
+
+.hamburger.active .bar:nth-child(2){
+    opacity: 0;
+    }
+.hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+    -webkit-transform: translateY(8px) rotate(45deg);
+    -moz-transform: translateY(8px) rotate(45deg);
+    -ms-transform: translateY(8px) rotate(45deg);
+    -o-transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    -moz-transform: translateY(-8px) rotate(-45deg);
+    -ms-transform: translateY(-8px) rotate(-45deg);
+    -o-transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-links{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #C5BB83;
+    width: 100%;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    z-index: 9999;
+}
+
+.nav-links li{
+     margin: 16px 0;
+}
+
+.nav-links.active{
+    left: 0;
+    
+}
     .top-head-wrapper{
         display: flex;
         flex-direction: column;
@@ -1011,10 +1095,6 @@ form .button{
     font-size: 16px;
     line-height: 20px;
     text-align: start;
-}
-
-.nav-items{
-    display: none;
 }
 
 
@@ -1190,12 +1270,10 @@ form{
     
     /*   youtube video */
     
-    
-    .yt-video iframe{
-        aspect-ratio: 16/9;
-        min-height: 238px;
-    
+    .youtube-video-wrapper{
+        padding: 0 0;
     }
+ 
     
     /* section three */
     
@@ -1268,7 +1346,19 @@ form{
         white-space: nowrap;
     }
     
-    
-    
+    }
+
+    @media(max-width: 740px){
+        .grid-items-wrapper{
+            padding: 0 40px;
+        }
+
+        .paragraph p{
+            font-size: 14px;
+        }
+
+        .text-h1 h3{
+            font-size: 20px;
+        }
     }
 
